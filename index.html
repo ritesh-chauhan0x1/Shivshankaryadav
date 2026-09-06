@@ -30,6 +30,12 @@
     <link rel="stylesheet" href="assets/css/shiv-custom.css" />
     <link rel="stylesheet" href="assets/css/shiv-navigation.css" />
       <link rel="stylesheet" href="assets/css/shiv-footer.css">
+    <style>
+      /* Uniform stat boxes: same width, same left edge, no stagger/overlap */
+      .banner-three-right { display:flex !important; flex-direction:column; gap:14px; }
+      .banner-three-right .banner-three-counter-item { margin-bottom:0 !important; margin-left:0 !important; margin-right:0 !important; width:100%; }
+      @media(max-width:991px){ .banner-three-right { max-width:440px; } }
+    </style>
   </head>
 
   <body>
