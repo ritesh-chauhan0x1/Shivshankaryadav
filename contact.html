@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Shan - Personal Portfolio and Digital Designer. Fully responsive, creative design, and easy to customize."
+    />
+    <meta
+      name="keywords"
+      content="Shan, Personal Portfolio, Digital Designer, Developer, Creative Agency, Responsive"
+    />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Shiv Shankar Yadav | Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo/logo.png" type="image/png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Swiper Bundle -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/shiv-custom.css" />
+    <link rel="stylesheet" href="assets/css/shiv-navigation.css" />
+      <link rel="stylesheet" href="assets/css/shiv-footer.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap');
+      :root { --ct-ink:#0f172a; --ct-muted:#475569; --ct-faint:#64748b; --ct-line:#e2e8f0; --ct-bg:#fcfbf9; --ct-accent:#7656c7; --ct-serif:"Instrument Serif",Georgia,serif; --ct-sans:"Inter","Instrument Sans",system-ui,-apple-system,sans-serif; }
+      .contact-page { background:linear-gradient(180deg,#fff 0%,#fcfbf9 120px); color:var(--ct-ink); font-family:var(--ct-sans); -webkit-font-smoothing:antialiased; }
+      .ct-shell { width:min(1200px,100%); margin:0 auto; padding-right:24px; padding-left:24px; }
+      .ct-hero { padding:124px 0 30px; border-bottom:1px solid var(--ct-line); }
+      .ct-eyebrow { margin:0 0 12px; color:var(--ct-accent); font-size:10px; font-weight:800; letter-spacing:.18em; text-transform:uppercase; display:inline-flex; align-items:center; gap:10px; }
+      .ct-eyebrow::before { content:""; width:20px; height:1px; background:var(--ct-accent); opacity:.5; }
+      .ct-hero h1 { margin:0; max-width:16ch; font-family:var(--ct-serif); font-weight:400; font-size:clamp(2.4rem,5vw,3.8rem); letter-spacing:-.04em; line-height:.92; text-wrap:balance; }
+      .ct-hero h1 em { font-style:italic; color:var(--ct-accent); }
+      .ct-hero p { margin:14px 0 0; max-width:66ch; color:var(--ct-muted); font-size:15px; line-height:1.75; }
+      .ct-main { padding:30px 0 56px; }
+      .ct-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
+      .ct-list { display:grid; gap:10px; }
+      .ct-row { display:flex; align-items:center; gap:14px; background:#fff; border:1px solid var(--ct-line); border-radius:14px; padding:14px 16px; box-shadow:0 4px 14px rgba(15,23,42,.04); transition:transform .18s, border-color .18s, box-shadow .18s; }
+      .ct-row:hover { transform:translateY(-2px); border-color:rgba(118,86,199,.4); box-shadow:0 10px 24px rgba(15,23,42,.07); }
+      .ct-ico { width:40px; height:40px; flex-shrink:0; display:grid; place-items:center; border-radius:50%; background:rgba(118,86,199,.1); border:1px solid rgba(118,86,199,.25); color:var(--ct-accent); }
+      .ct-ico svg { width:18px; height:18px; }
+      .ct-row small { display:block; font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--ct-faint); }
+      .ct-row a.ct-val, .ct-row span.ct-val { display:block; margin-top:2px; font-size:14.5px; font-weight:600; color:var(--ct-ink); text-decoration:none; word-break:break-all; }
+      .ct-row a.ct-val:hover { color:var(--ct-accent); text-decoration:underline; text-underline-offset:3px; }
+      .ct-form-card { background:#fff; border:1px solid var(--ct-line); border-radius:18px; padding:24px; box-shadow:0 8px 24px rgba(15,23,42,.05); position:sticky; top:90px; }
+      .ct-form-card h2 { margin:0 0 6px; font-family:var(--ct-serif); font-weight:400; font-size:1.5rem; letter-spacing:-.03em; }
+      .ct-form-card > p { margin:0 0 16px; color:var(--ct-faint); font-size:13px; line-height:1.6; }
+      .ct-field { margin-bottom:12px; }
+      .ct-field label { display:block; margin-bottom:6px; font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--ct-muted); }
+      .ct-field input, .ct-field textarea { width:100%; padding:11px 13px; border:1px solid var(--ct-line); border-radius:10px; font:400 14px/1.5 var(--ct-sans); color:var(--ct-ink); background:#fcfbf9; transition:border-color .15s, box-shadow .15s; }
+      .ct-field textarea { min-height:130px; resize:vertical; }
+      .ct-field input:focus, .ct-field textarea:focus { outline:none; border-color:var(--ct-accent); box-shadow:0 0 0 3px rgba(118,86,199,.15); background:#fff; }
+      .ct-submit { width:100%; padding:13px; border:none; border-radius:999px; background:var(--ct-ink); color:#fff; font:800 11px/1 var(--ct-sans); letter-spacing:.12em; text-transform:uppercase; cursor:pointer; transition:background .18s, transform .18s; }
+      .ct-submit:hover { background:var(--ct-accent); transform:translateY(-1px); }
+      .ct-note { margin:12px 0 0; font-size:12px; color:var(--ct-faint); line-height:1.6; text-align:center; }
+      .ct-popup { position:fixed; inset:0; z-index:2000; display:none; align-items:center; justify-content:center; padding:20px; background:rgba(15,23,42,.55); backdrop-filter:blur(4px); }
+      .ct-popup.open { display:flex; }
+      .ct-popup-card { position:relative; width:100%; max-width:420px; background:#fff; border:1px solid var(--ct-line); border-radius:18px; padding:30px 24px 24px; text-align:center; box-shadow:0 24px 60px rgba(15,23,42,.25); }
+      .ct-popup-close { position:absolute; top:8px; right:12px; border:none; background:none; font-size:26px; line-height:1; color:var(--ct-faint); cursor:pointer; }
+      .ct-popup-close:hover { color:var(--ct-ink); }
+      .ct-popup-card h3 { margin:0 0 8px; font-family:var(--ct-serif); font-weight:400; font-size:1.6rem; letter-spacing:-.03em; color:var(--ct-ink); }
+      .ct-popup-card p { margin:0; color:var(--ct-muted); font-size:14px; line-height:1.65; }
+      .ct-popup-card p a { color:var(--ct-accent); font-weight:700; text-decoration:underline; text-underline-offset:2px; word-break:break-all; }
+      .ct-popup-btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+      .ct-popup-btns a { display:inline-flex; align-items:center; gap:7px; padding:12px 20px; border-radius:999px; font:800 11px/1 var(--ct-sans); letter-spacing:.1em; text-transform:uppercase; text-decoration:none; transition:transform .15s, background .15s; }
+      .ct-popup-email { background:var(--ct-ink); color:#fff; }
+      .ct-popup-email:hover { background:var(--ct-accent); color:#fff; transform:translateY(-1px); }
+      .ct-popup-insta { background:rgba(118,86,199,.1); border:1px solid rgba(118,86,199,.35); color:var(--ct-accent); }
+      .ct-popup-insta:hover { background:var(--ct-accent); color:#fff; transform:translateY(-1px); }
+      @media(max-width:900px){ .ct-grid{ grid-template-columns:1fr; } .ct-form-card{ position:static; } .ct-hero{ padding-top:110px; } }
+      @media(max-width:600px){ .ct-shell{ padding-left:16px; padding-right:16px; } .ct-hero{ padding-top:100px; padding-bottom:22px; } .ct-main{ padding:22px 0 40px; } .ct-form-card{ padding:18px; } }
+    </style>
+  </head>
+
+  <body>
+    <!--==================== Overlay Start ====================-->
+    <div class="overlay"></div>
+    <!--==================== Overlay End ====================-->
+
+    <!--==================== Sidebar Overlay End ====================-->
+    <div class="side-overlay"></div>
+    <!--==================== Sidebar Overlay End ====================-->
+
+    <!-- Custom Toast Message start -->
+    <div id="toast-container"></div>
+    <!-- Custom Toast Message End -->
+
+    <!-- ==================== Scroll to Top End Here ==================== -->
+    <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+        <svg
+          width="12"
+          height="7"
+          viewBox="0 0 12 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 6L6 1L1 6"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- ==================== Scroll to Top End Here ==================== -->
+
+    <!-- ==================== Offcanvus Mobile Menu Start Here ==================== -->
+    <div class="tw-offcanvas-2-area p-relative">
+      <div class="tw-offcanvas-2-bg is-left left-box"></div>
+      <div class="tw-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
+      <div class="tw-offcanvas-2-wrapper">
+        <div class="tw-offcanvas-2-left left-box">
+          <div
+            class="tw-offcanvas-2-left-wrap d-flex justify-content-between align-items-center"
+          >
+            <div class="twoffcanvas__logo">
+              <a class="logo-1" href="index.html"
+                ><img src="assets/images/logo/logo.png" alt="Shan Logo"
+              /></a>
+            </div>
+            <div class="tw-offcanvas-2-close d-md-none text-end">
+              <button class="tw-offcanvas-2-close-btn tw-offcanvas-2-close-btn">
+                <span class="text">
+                  <span class="text-white">close</span>
+                </span>
+                <span class="d-inline-block">
+                  <span>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 0.709325 -0.704882 0.709325 1.0061 0)"
+                        fill="currentcolor"
+                      />
+                      <rect
+                        width="32.621"
+                        height="1.00918"
+                        transform="matrix(0.704882 -0.709325 0.704882 0.709325 0 23.2842)"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="tw-main-menu-mobile menu-hover-active counter-row">
+            <nav></nav>
+          </div>
+        </div>
+        <div
+          class="tw-offcanvas-2-right right-box d-none d-md-block p-relative"
+        >
+          <div class="tw-offcanvas-2-close text-end">
+            <button class="tw-offcanvas-2-close-btn">
+              <span class="text">
+                <span>close</span>
+              </span>
+              <span class="d-inline-block">
+                <span>
+                  <svg
+                    width="38"
+                    height="38"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.80859 9.80762L28.1934 28.1924"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.80859 28.1924L28.1934 9.80761"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </div>
+          <div
+            class="tw-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100"
+          >
+            <div class="twoffcanvas__contact-info">
+              <div class="twoffcanvas__contact-title">
+                <h5 class="text-white">Contact us</h5>
+              </div>
+              <ul>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-map-pin-line"></i
+                  ></span>
+                  <a
+                    class="text-white"
+                    href="https://www.google.com/maps/place/London,+UK"
+                    target="_blank"
+                    >London, UK</a
+                  >
+                </li>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-envelope"></i
+                  ></span>
+                  <a class="text-white" href="mailto:shivyadav0344@gmail.com"
+                    ><span>shivyadav0344@gmail.com</span></a
+                  >
+                </li>
+                <li>
+                  <span class="text-main-two-600 tw-text-xl"
+                    ><i class="ph ph-phone-call"></i
+                  ></span>
+                  <a class="text-white" href="https://wa.me/9779845789132" target="_blank"
+                    >WhatsApp: +977-9845789132</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="footer-social"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <ul class="tw-gap-2">
+                <li>
+                  <a href="https://www.instagram.com/shiv_____yadav/" target="_blank" rel="noopener noreferrer">
+                    <span
+                      class="active-media d-flex align-items-center tw-gap-1"
+                      >Facebook <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-facebook-logo"></i
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/shiv-shankar-yadav-71b2a325/" target="_blank" rel="noopener noreferrer">
+                    <span
+                      class="active-media d-flex align-items-center tw-gap-1"
+                      >INSTAGRAM <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-instagram-logo"></i
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span
+                      class="active-media d-flex align-items-center tw-gap-1"
+                      >LINKEDIN <i class="ph ph-arrow-bend-up-right"></i
+                    ></span>
+                    <span class="hover-media"
+                      ><i class="ph ph-linkedin-logo"></i
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================== Offcanvus Mobile Menu End Here ==================== -->
+
+    <!-- ==================== Header Start Here ==================== -->
+    <header
+      class="header header-two header-three tw-transition-all tw-z-99 position-relative"
+    >
+      <div class="container tw-container-1800-px">
+        <nav
+          class="d-flex align-items-center justify-content-between position-relative"
+        >
+          <!-- Logo Start -->
+          <div class="header-three-logo tw-rounded-md">
+            <a href="index.html" class="link">
+              <img
+                src="assets/images/logo/logo-secendary.png"
+                alt="Shan Logo"
+                class="max-w-200-px"
+              />
+            </a>
+          </div>
+          <!-- Logo End  -->
+
+          <!-- Menu Start  -->
+          <div class="header-three-social d-none d-lg-block">
+            <ul class="d-flex tw-gap-205">
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-facebook-logo"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-x-logo"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-instagram-logo"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="tw-w-13 tw-h-13 lh-1 d-inline-flex justify-content-center align-items-center text-heading tw-text-xl tw-rounded-md"
+                  href="#"
+                  ><i class="ph-bold ph-dribbble-logo"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Menu End  -->
+
+          <!-- Menu Start  -->
+          <div class="header-menu d-none">
+            <!-- Nav menu Start -->
+            <div class="main-menu">
+              <nav class="tw-main-menu-content">
+                <ul>
+                  <li class="p-static has-dropdown">
+                    <a class="color-active" href="index.html">Home</a>
+                    <!-- mega menu start -->
+                    <div class="tw-submenu submenu has-homemenu">
+                      <div
+                        class="row gx-6 row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2"
+                      >
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="assets/images/thumbs/home1.jpg"
+                              alt="home-one"
+                            />
+                            <div class="homemenu-btn w-100">
+                              <div class="tw-mb-2">
+                                <a
+                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
+                                  href="index.html"
+                                >
+                                  Multi Page
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="index.html">Ceative Agency</a>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="assets/images/thumbs/home2.jpg"
+                              alt="home-two"
+                            />
+                            <div class="homemenu-btn w-100">
+                              <div class="tw-mb-2">
+                                <a
+                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
+                                  href="index-2.html"
+                                >
+                                  Multi Page
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="index-2.html">Digital Studio</a>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="assets/images/thumbs/home3.jpg"
+                              alt="home-three"
+                            />
+                            <div class="homemenu-btn w-100">
+                              <div class="tw-mb-2">
+                                <a
+                                  class="bg-main-two-600 text-white fw-semibold tw-py-3 tw-text-sm d-inline-block hover-bg-white hover-text-heading menu-btn show-1"
+                                  href="index-3.html"
+                                >
+                                  Multi Page
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="index-3.html">Personal Portfolio</a>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="col homemenu">
+                          <div class="homemenu-thumb tw-mb-4">
+                            <img
+                              src="assets/images/thumbs/coming-soon-img.png"
+                              alt="coming-soon"
+                            />
+                          </div>
+                          <div class="homemenu-content text-center">
+                            <h4 class="homemenu-title">
+                              <a href="#">Coming Soon</a>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- mega menu end -->
+                  </li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li class="has-dropdown">
+                    <a href="service.html">Services</a>
+                    <ul class="submenu tw-submenu">
+                      <li><a href="service.html">Our Service</a></li>
+                      <li>
+                        <a href="service-details.html">Service Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="#">Pages</a>
+                    <ul class="submenu tw-submenu">
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="team.html">Our Team</a></li>
+                      <li><a href="testimonial.html">Testimonials</a></li>
+                      <li><a href="pricing.html">Pricing</a></li>
+                      <li><a href="portfolio-one.html">Portfolio One</a></li>
+                      <li><a href="portfolio-two.html">Portfolio Two</a></li>
+                      <li>
+                        <a href="portfolio-three.html">Portfolio Theee</a>
+                      </li>
+                      <li><a href="portfolio-four.html">Portfolio Four</a></li>
+                      <li>
+                        <a href="portfolio-details.html">Portfolio Details</a>
+                      </li>
+                      <li><a href="faq.html">Our Faq</a></li>
+                      <li><a href="error.html">Error</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-dropdown">
+                    <a href="blog.html">Blog</a>
+                    <ul class="submenu tw-submenu">
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-list.html">Blog List</a></li>
+                      <li><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Nav menu End  -->
+          </div>
+          <!-- Menu End  -->
+
+          <!-- Header Right start -->
+          <div class="header-right d-flex align-items-center tw-gap-705">
+            <div class="header-three-button d-none d-md-block">
+              <a class="tw-hover-btn bg-black text-white fw-bold tw-py-4 tw-px-10 d-inline-block hover-text-white text-uppercase tw-rounded-md" href="contact.html">contact <span class="tw-hover-btn-circle-dot bg-main-two-600"></span></a>
+            </div>
+          </div>
+
+          <!-- Header Right End  -->
+        </nav>
+      </div>
+    </header>
+    <!-- ==================== Header End Here ==================== -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main class="contact-page">
+          <section class="ct-hero">
+            <div class="ct-shell">
+              <p class="ct-eyebrow">Contact</p>
+              <h1>Let&#39;s build something <em>together.</em></h1>
+              <p>I&#39;m Shiv Shankar Yadav — I&#39;m open to collaboration on web development, 3D websites, machine learning and business-tech projects. The fastest way to reach me is email or WhatsApp, or send the form below and it will open straight into an email to me. I&#39;m currently based in London, UK.</p>
+            </div>
+          </section>
+          <section class="ct-main">
+            <div class="ct-shell ct-grid">
+              <div class="ct-list">
+                <div class="ct-row">
+                  <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+                  <div><small>Email</small><a class="ct-val" href="mailto:shivyadav0344@gmail.com">shivyadav0344@gmail.com</a></div>
+                </div>
+                <div class="ct-row">
+                  <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+                  <div><small>WhatsApp</small><a class="ct-val" href="https://wa.me/9779845789132" target="_blank" rel="noopener noreferrer">+977-9845789132</a></div>
+                </div>
+                <div class="ct-row">
+                  <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+                  <div><small>Phone</small><a class="ct-val" href="tel:+919658287347">+91 9658287347</a></div>
+                </div>
+                <div class="ct-row">
+                  <span class="ct-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38zM5.25 3A1.97 1.97 0 1 0 5.3 6.94 1.97 1.97 0 0 0 5.25 3M20.45 13.4c0-3.47-1.86-5.08-4.34-5.08a3.76 3.76 0 0 0-3.39 1.87V8.5H9.35V20h3.37v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.72 1.87 3.05V20h3.38z"/></svg></span>
+                  <div><small>LinkedIn</small><a class="ct-val" href="https://www.linkedin.com/in/shiv-shankar-yadav-71b2a325/" target="_blank" rel="noopener noreferrer">shiv-shankar-yadav</a></div>
+                </div>
+                <div class="ct-row">
+                  <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></span>
+                  <div><small>Instagram</small><a class="ct-val" href="https://www.instagram.com/shiv_____yadav/" target="_blank" rel="noopener noreferrer">@shiv_____yadav</a></div>
+                </div>
+                <div class="ct-row">
+                  <span class="ct-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.54 1.04 1.54 1.04.9 1.54 2.35 1.1 2.92.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.53 9.53 0 0 1 12 6.46c.85 0 1.7.11 2.5.34 1.9-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.7-4.58 4.95.36.31.68.9.68 1.81v2.68c0 .27.18.58.69.48A10 10 0 0 0 12 2"/></svg></span>
+                  <div><small>GitHub</small><a class="ct-val" href="https://github.com/shivyadav-error404" target="_blank" rel="noopener noreferrer">shivyadav-error404</a></div>
+                </div>
+                <div class="ct-row">
+                  <span class="ct-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                  <div><small>Location</small><span class="ct-val">London, UK</span></div>
+                </div>
+              </div>
+              <div class="ct-form-card">
+                <h2>Send a message</h2>
+                <p>Fill this in and it will open your email app with everything addressed to me.</p>
+                <form id="ct-form">
+                  <div class="ct-field"><label for="ct-name">Your name</label><input id="ct-name" name="name" type="text" placeholder="your name here" required /></div>
+                  <div class="ct-field"><label for="ct-email">Your email</label><input id="ct-email" name="email" type="email" placeholder="jane@company.com" required /></div>
+                  <div class="ct-field"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" placeholder="Hi Shiv, I'd like to talk about..." required></textarea></div>
+                  <button class="ct-submit" type="submit">Send message ↗</button>
+                </form>
+                <p class="ct-note">No account, no spam — just a direct email to shivyadav0344@gmail.com.</p>
+              </div>
+            </div>
+          </section>
+        </main>
+        <div class="ct-popup" id="ct-popup" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="ct-popup-title">
+          <div class="ct-popup-card">
+            <button class="ct-popup-close" id="ct-popup-close" aria-label="Close">×</button>
+            <h3 id="ct-popup-title">Thanks, message ready!</h3>
+            <p>If your email app didn&#39;t open, kindly email me directly at <a href="mailto:shivyadav0344@gmail.com">shivyadav0344@gmail.com</a> or text me on Instagram:</p>
+            <div class="ct-popup-btns">
+              <a class="ct-popup-email" id="ct-popup-email" href="mailto:shivyadav0344@gmail.com">Email me ↗</a>
+              <a class="ct-popup-insta" href="https://www.instagram.com/shiv_____yadav/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            </div>
+          </div>
+        </div>
+        <script>
+          var ctPopup = document.getElementById('ct-popup');
+          function ctClosePopup() { ctPopup.classList.remove('open'); ctPopup.setAttribute('aria-hidden', 'true'); }
+          document.getElementById('ct-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = document.getElementById('ct-name').value.trim();
+            var email = document.getElementById('ct-email').value.trim();
+            var msg = document.getElementById('ct-msg').value.trim();
+            var subject = encodeURIComponent('Portfolio enquiry from ' + name);
+            var body = encodeURIComponent(msg + '\n\n— ' + name + ' (' + email + ')');
+            document.getElementById('ct-popup-email').href = 'mailto:shivyadav0344@gmail.com?subject=' + subject + '&body=' + body;
+            ctPopup.classList.add('open');
+            ctPopup.setAttribute('aria-hidden', 'false');
+          });
+          document.getElementById('ct-popup-close').addEventListener('click', ctClosePopup);
+          ctPopup.addEventListener('click', function (e) { if (e.target === ctPopup) ctClosePopup(); });
+          document.addEventListener('keydown', function (e) { if (e.key === 'Escape') ctClosePopup(); });
+        </script>
+      </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/boostrap.bundle.min.js"></script>
+    <footer class="shiv-footer">
+  <div class="shiv-footer-collab">
+    <div class="shiv-footer-collab-inner">
+      <div>
+        <h2>Let&#39;s collaborate</h2>
+        <p>Open for collaboration on web development, 3D websites, machine learning and business-tech projects. Reach me directly — no newsletter, no spam, just a conversation.</p>
+        <div class="shiv-footer-collab-btns">
+          <a class="shiv-footer-btn primary" href="mailto:shivyadav0344@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+          <a class="shiv-footer-btn" href="https://www.instagram.com/shiv_____yadav/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a class="shiv-footer-btn" href="https://wa.me/9779845789132" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></a>
+          <a class="shiv-footer-btn" href="https://www.linkedin.com/in/shiv-shankar-yadav-71b2a325/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38zM5.25 3A1.97 1.97 0 1 0 5.3 6.94 1.97 1.97 0 0 0 5.25 3M20.45 13.4c0-3.47-1.86-5.08-4.34-5.08a3.76 3.76 0 0 0-3.39 1.87V8.5H9.35V20h3.37v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.72 1.87 3.05V20h3.38z"/></svg></a>
+        </div>
+      </div>
+      <div class="shiv-footer-collab-media">
+        <img src="assets/images/shiv/shiv-02.jpeg" alt="Shiv Shankar Yadav" loading="lazy" />
+      </div>
+    </div>
+  </div>
+  <div class="shiv-footer-grid">
+    <div>
+      <div class="shiv-footer-brand"><span>Shiv Shankar Yadav</span></div>
+      <p class="shiv-footer-desc">CS Engineer, Entrepreneur &amp; Creative Technologist. I build web experiences, 3D websites and machine-learning projects.</p>
+      <div class="shiv-footer-social">
+        <a href="https://www.linkedin.com/in/shiv-shankar-yadav-71b2a325/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38zM5.25 3A1.97 1.97 0 1 0 5.3 6.94 1.97 1.97 0 0 0 5.25 3M20.45 13.4c0-3.47-1.86-5.08-4.34-5.08a3.76 3.76 0 0 0-3.39 1.87V8.5H9.35V20h3.37v-5.69c0-1.5.28-2.95 2.14-2.95 1.84 0 1.87 1.72 1.87 3.05V20h3.38z"/></svg>LinkedIn</a>
+        <a href="https://github.com/shivyadav-error404" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.54 1.04 1.54 1.04.9 1.54 2.35 1.1 2.92.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.53 9.53 0 0 1 12 6.46c.85 0 1.7.11 2.5.34 1.9-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.35 4.7-4.58 4.95.36.31.68.9.68 1.81v2.68c0 .27.18.58.69.48A10 10 0 0 0 12 2"/></svg>GitHub</a>
+        <a href="https://www.instagram.com/shiv_____yadav/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>Instagram</a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>What I Do</h4>
+      <ul>
+        <li><a href="works.html">Web Development</a></li>
+        <li><a href="works.html">3D Websites</a></li>
+        <li><a href="works.html">Machine Learning</a></li>
+        <li><a href="works.html">Business &amp; Finance</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="shiv-footer-contact">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:shivyadav0344@gmail.com">shivyadav0344@gmail.com</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><a href="https://wa.me/9779845789132" target="_blank" rel="noopener noreferrer">+977-9845789132</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>London, UK</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shiv-footer-bottom">
+    <p>&copy; <span class="shiv-year">2026</span> Shiv Shankar Yadav. All rights reserved.</p>
+    <p><a href="index.html" style="color:#64748b;">Home</a> · <a href="contact.html" style="color:#64748b;">Contact</a></p>
+  </div>
+</footer>
+
+<script>document.querySelectorAll(".shiv-year").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+    <script src="assets/js/shiv-nav.js"></script>
+</body>
+</html>

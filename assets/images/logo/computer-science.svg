@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 332">
+  <!-- Laptop bezel -->
+  <rect x="72" y="12" width="176" height="130" rx="12" fill="#ffffff" stroke="#111111" stroke-width="6"/>
+  <!-- Screen -->
+  <rect x="88" y="26" width="144" height="102" rx="4" fill="#141414"/>
+  <!-- Atom orbits -->
+  <g fill="none" stroke="#ffffff" stroke-width="4.5">
+    <ellipse cx="160" cy="77" rx="42" ry="15"/>
+    <ellipse cx="160" cy="77" rx="42" ry="15" transform="rotate(60 160 77)"/>
+    <ellipse cx="160" cy="77" rx="42" ry="15" transform="rotate(-60 160 77)"/>
+  </g>
+  <!-- Nucleus -->
+  <circle cx="160" cy="77" r="9" fill="#f97316"/>
+  <!-- Electrons -->
+  <circle cx="202" cy="77" r="4.5" fill="#fbbf24"/>
+  <circle cx="139" cy="95" r="4.5" fill="#fbbf24"/>
+  <circle cx="181" cy="59" r="4.5" fill="#fbbf24"/>
+  <!-- Laptop base -->
+  <path d="M70,142 L250,142 L282,205 Q283,211 277,211 L43,211 Q37,211 38,205 Z" fill="#ffffff" stroke="#111111" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Keyboard keys -->
+  <g fill="#111111">
+    <rect x="78" y="153" width="20" height="10" rx="3"/><rect x="102" y="153" width="20" height="10" rx="3"/><rect x="126" y="153" width="20" height="10" rx="3"/><rect x="150" y="153" width="20" height="10" rx="3"/><rect x="174" y="153" width="20" height="10" rx="3"/><rect x="198" y="153" width="20" height="10" rx="3"/><rect x="222" y="153" width="20" height="10" rx="3"/>
+    <rect x="78" y="168" width="20" height="10" rx="3"/><rect x="102" y="168" width="20" height="10" rx="3"/><rect x="126" y="168" width="20" height="10" rx="3"/><rect x="150" y="168" width="20" height="10" rx="3"/><rect x="174" y="168" width="20" height="10" rx="3"/><rect x="198" y="168" width="20" height="10" rx="3"/><rect x="222" y="168" width="20" height="10" rx="3"/>
+    <rect x="78" y="183" width="20" height="10" rx="3"/><rect x="102" y="183" width="20" height="10" rx="3"/><rect x="126" y="183" width="20" height="10" rx="3"/><rect x="150" y="183" width="20" height="10" rx="3"/><rect x="174" y="183" width="20" height="10" rx="3"/><rect x="198" y="183" width="20" height="10" rx="3"/><rect x="222" y="183" width="20" height="10" rx="3"/>
+  </g>
+  <!-- Title text -->
+  <g font-family="'Arial Black', Arial, sans-serif" font-weight="900" fill="#111111" text-anchor="middle" transform="rotate(-1 160 285)">
+    <text x="160" y="264" font-size="44" letter-spacing="1">COMPUTER</text>
+    <text x="160" y="310" font-size="44" letter-spacing="1">SCIENCE</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+SHIV SHANKAR YADAV - PORTFOLIO SOURCE DETAILS
+
+Profile
+Shiv Shankar Yadav is a technology-focused Computer Science and Engineering professional with interests in software development, web development, business, finance, stock trading, market analysis, and creative technology. He is described as dynamic and results-driven, with a strong foundation in software development, stock trading, and market analysis. His focus is on using technology and data-driven insight to create efficient solutions and improve financial decision-making.
+
+Education
+- South Zone Sec School, Birgunj, Nepal: Schooling, 2007-2020.
+- Kathmandu Model Secondary School, Kathmandu, Nepal: Intermediate in Science-Biology / Grades 11 and 12, 2020-2022; CGPA 3.28/4.
+- KIIT University: B.Tech Computer Science and Engineering, 2022-2026; CGPA 9.27/10.
+- York St John University, London Campus: MSc, current. The MSc specialization has not been provided and must not be invented.
+
+Experience
+- Himstack Pvt Ltd (himstack.com): Co-Founder and CFO. Do not invent financial figures, company achievements, funding amounts, or detailed CFO duties.
+- Load Lift Pvt Ltd (loadlift.com.np): Web Development Intern. Do not invent dates or responsibilities.
+- National Model Academy: Junior Administrator, May 2024-July 2024. Responsibilities: analyzed document information and entered data into ERP software; scheduled timetables; coordinated with teachers; motivated students for extracurricular activities; helped engage students in a technological environment.
+- Deepak Visual (deepakvisuals.com): created a 3D website experience for a cinematographer.
+
+Skills
+Java, C, Python, Java Swing, TensorFlow, SQL, blogging, web designing, stock trading, long-term investment, leadership, software development, web development, business, finance, market analysis, creative technology.
+
+Project
+Bone Fracture Detection: machine-learning system using Logistic Regression, Python, NumPy, Pandas, image preprocessing (grayscale conversion, resizing, normalization), and Flask real-time X-ray classification. Resume-reported accuracy: 88%.
+
+Certifications
+- AI-ML Virtual Internship Certificate - AICTE / Eduskills via AWS Academy, 2025.
+- Corporate Governance - Coursera, 2025.
+
+Contact
+Location: KP 8A Boys Hostel, KIIT University, Bhubaneswar, Odisha.
+Phone: +91 9658287347.
+WhatsApp: +977-9845789132.
+Email: shivyadav0344@gmail.com.
+LinkedIn: https://www.linkedin.com/in/shiv-shankar-yadav-71b2a325/
+Instagram: https://www.instagram.com/shiv_____yadav/
+GitHub: https://github.com/shivyadav-error404
+
+Photography
+Use assets/images/shiv/shiv-main.jpeg as the primary home hero image, cropped from the lower portion. Use assets/images/shiv/shiv-second.jpeg as the secondary home image. Background removal is requested for the primary photo; until a transparent cutout asset is available, use the original image with a contained lower-crop presentation rather than misrepresenting it as background-removed.
