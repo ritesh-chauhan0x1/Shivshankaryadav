@@ -1,0 +1,71 @@
+/* Cross-page responsive refinements. The page styles retain their desktop
+   design while this layer protects compact phones, tablets, and touch input. */
+html { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+*,*::before,*::after { box-sizing:border-box; }
+img,svg,video,canvas { max-width:100%; }
+img,video { height:auto; }
+button,input,textarea,select { font:inherit; }
+button,a,input,textarea,select { -webkit-tap-highlight-color:transparent; }
+button,a { touch-action:manipulation; }
+
+@media (max-width:1199px) {
+  .about-shell,.edu-shell,.wk-shell,.ct-shell { padding-left:24px; padding-right:24px; }
+  .story-grid,.story-grid--reverse { gap:36px; }
+  .edu-timeline { max-width:100%; }
+  .wk-card { gap:22px; }
+}
+
+@media (max-width:900px) {
+  .about-section { padding-top:56px; padding-bottom:56px; }
+  .edu-timeline-wrap,.edu-cert-wrap { padding-top:40px; padding-bottom:40px; }
+  .wk-filters { top:72px; }
+  .ct-row { min-width:0; }
+}
+
+@media (max-width:767px) {
+  .about-shell,.edu-shell,.wk-shell,.ct-shell { padding-left:16px; padding-right:16px; }
+  .about-section { padding-top:46px; padding-bottom:46px; }
+  .story-grid,.story-grid--reverse { gap:24px; }
+  .hero-photo,.work-photo,.second-photo { height:clamp(320px,100vw,420px); }
+  .social-links { gap:8px; }
+  .social-links a { min-height:38px; padding:7px 10px; }
+  .tags { gap:6px; }
+  .tags span { padding:7px 9px; font-size:10px; }
+
+  .edu-hero { padding-top:92px; }
+  .edu-label { justify-content:center; }
+  .edu-timeline { padding-left:20px; }
+  .edu-copy { min-width:0; }
+  .edu-head-row { align-items:flex-start; }
+  .edu-quote { max-width:100%; justify-content:center; text-align:center; }
+
+  .wk-page { padding-top:72px; }
+  .wk-filters { top:68px; }
+  .wk-filters-inner { flex-wrap:nowrap; overflow-x:auto; overscroll-behavior-x:contain; padding:10px 16px; scrollbar-width:thin; }
+  .wk-filter { flex:0 0 auto; min-height:36px; }
+  .wk-card,.wk-row { padding:18px; border-radius:16px; }
+  .wk-visual { min-height:220px; padding:16px; }
+  .wk-tags span { font-size:9px; }
+  .wk-link { min-height:40px; }
+
+  .ct-hero { padding-top:94px; }
+  .ct-hero h1 { font-size:clamp(2.1rem,10vw,3rem); }
+  .ct-hero p { font-size:14px; }
+  .ct-main { padding-top:24px; }
+  .ct-row { align-items:flex-start; padding:13px; }
+  .ct-row a.ct-val,.ct-row span.ct-val { font-size:14px; overflow-wrap:anywhere; }
+  .ct-form-card { padding:18px; border-radius:14px; }
+  .ct-field input,.ct-field textarea { font-size:16px; }
+
+  .shiv-footer-collab-media { justify-content:center; }
+  .shiv-footer-social a { min-height:34px; }
+}
+
+@media (max-width:374px) {
+  .header-three-logo a::after { font-size:14px; letter-spacing:.055em; }
+  .banner-three-right { gap:6px!important; }
+  .banner-three-right .banner-three-counter-item { min-height:88px!important; padding:10px 5px!important; }
+  .banner-three-right .banner-three-counter-paragraph { font-size:9px!important; }
+  .social-links a { font-size:10px; }
+  .edu-quote::before,.edu-quote::after { width:14px; }
+}

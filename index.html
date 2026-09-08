@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Shiv - Personal Portfolio and Digital Designer. Fully responsive, creative design, and easy to customize."
-    />
+    <meta name="description" content="Shiv Yadav's portfolio and work experience in software development, web development, entrepreneurship, machine learning, and creative technology." />
     <meta
       name="keywords"
-      content="Shiv, Personal Portfolio, Digital Designer, Developer, Creative Agency, Responsive"
+      content="Shiv Yadav portfolio, Shiv Shankar Yadav, work experience, web development, software development, machine learning, creative technology"
     />
     <meta name="robots" content="INDEX,FOLLOW" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title -->
-    <title>Shiv Shankar Yadav | Portfolio</title>
+    <meta name="author" content="Shiv Shankar Yadav" />
+    <link rel="canonical" href="https://shivshankaryadav.com.np/" />
+    <meta property="og:title" content="Shiv Yadav Portfolio &amp; Work Experience" />
+    <meta property="og:description" content="Explore Shiv Yadav's work in technology, web development, business, and creative digital experiences." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shivshankaryadav.com.np/" />
+    <meta property="og:image" content="https://shivshankaryadav.com.np/assets/images/shiv/shiv-main.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Shiv Yadav Portfolio &amp; Work Experience</title>
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/logo/logo.png" type="image/png" />
+    <link rel="icon" href="assets/images/logo/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="assets/images/logo/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.svg" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- Swiper Bundle -->
@@ -29,12 +36,16 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/shiv-custom.css" />
     <link rel="stylesheet" href="assets/css/shiv-navigation.css" />
-      <link rel="stylesheet" href="assets/css/shiv-footer.css">
+    <link rel="stylesheet" href="assets/css/shiv-footer.css">
+    <link rel="stylesheet" href="assets/css/shiv-responsive.css">
     <style>
       /* Uniform stat boxes: same width, same left edge, no stagger/overlap */
-      .banner-three-right { display:flex !important; flex-direction:column; gap:14px; }
+      @media(min-width:1200px){ .banner-three-right { display:flex !important; flex-direction:column; gap:14px; } }
       .banner-three-right .banner-three-counter-item { margin-bottom:0 !important; margin-left:0 !important; margin-right:0 !important; width:100%; }
       @media(max-width:991px){ .banner-three-right { max-width:440px; } }
+      @media(max-width:767px){
+        .banner-three-right { display:grid !important; max-width:none; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+      }
     </style>
   </head>
 
@@ -50,28 +61,6 @@
     <!-- Custom Toast Message start -->
     <div id="toast-container"></div>
     <!-- Custom Toast Message End -->
-
-    <!-- ==================== Scroll to Top End Here ==================== -->
-    <div class="back-to-top-wrapper">
-      <button id="back_to_top" type="button" class="back-to-top-btn">
-        <svg
-          width="12"
-          height="7"
-          viewBox="0 0 12 7"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11 6L6 1L1 6"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
-    </div>
-    <!-- ==================== Scroll to Top End Here ==================== -->
 
     <!-- ==================== Offcanvus Mobile Menu Start Here ==================== -->
     <div class="tw-offcanvas-2-area p-relative">
@@ -584,7 +573,7 @@
                           <span
                             class="purecounter font-heading"
                             data-purecounter-duration="2"
-                            data-purecounter-end="92.7" data-purecounter-decimals="1" data-purecounter-separator="true"
+                            data-purecounter-end="92.3" data-purecounter-decimals="1" data-purecounter-separator="true"
                           ></span
                           >%
                         </h4>
@@ -743,7 +732,7 @@
                       <div class="tw-hover-btn-wrapper d-inline-block">
                         <a
                           class="tw-btn-circle tw-hover-btn-item tw-hover-btn tw-w-160-px tw-h-160-px lh-1 d-inline-flex justify-content-center align-items-center rounded-circle position-relative overflow-hidden border border-1 border-neutral-200"
-                          href="about.html"
+                          href="works.html"
                         >
                           <span
                             class="d-flex flex-column justify-content-center"

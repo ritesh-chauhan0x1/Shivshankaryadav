@@ -1,2 +1,50 @@
 /* Shiv content assets: preserves the cloned template's UI while substituting his photography. */
 .banner-three-man img{width:min(44vw,650px);height:min(76vh,850px);object-fit:contain;object-position:center bottom;border-radius:0;filter:drop-shadow(0 18px 30px rgba(0,0,0,.16))}.banner-three-left .shiv-secondary{width:100%;height:185px;object-fit:cover;object-position:center 44%;border-radius:14px;margin:0 0 22px}.banner-three-left{overflow:hidden}.shiv-personal-image{object-fit:cover!important;object-position:center 40%!important}.banner-three-man:after{content:'SHIV SHANKAR YADAV';position:absolute;bottom:-34px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;letter-spacing:.2em;color:#171717}@media(max-width:991px){.banner-three-man img{width:min(68vw,470px);height:520px;object-position:center bottom}.banner-three-left .shiv-secondary{height:140px}}
+
+/* The source theme's 397px hero heading overwhelms this two-word title on desktop. */
+@media (min-width:992px){.banner-three-title{font-size:clamp(112px,11vw,200px)!important;line-height:.9}}
+
+/* At tablet widths, place the portrait and its stats in the normal document flow.
+   This prevents the stats panel from covering the portrait as the viewport narrows. */
+@media (min-width:768px) and (max-width:1199px){
+  .banner-three-area{padding:112px 0 72px}
+  .banner-three-wrapper{display:flex;flex-direction:column;align-items:center}
+  .banner-three-title{order:1;margin:0 0 10px!important;font-size:clamp(96px,13vw,150px)!important;line-height:.9}
+  .banner-three-man{position:relative!important;inset:auto!important;left:auto!important;transform:none!important;order:2;width:100%;margin:0;text-align:center}
+  .banner-three-man img{width:min(58vw,520px);height:500px;object-position:center bottom}
+  .banner-three-wrap{order:3;display:flex!important;width:100%;flex-direction:column;align-items:center}
+  .banner-three-right{display:grid!important;order:1;width:min(100%,760px);max-width:none!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0 0!important;padding:0!important;background:transparent!important;box-shadow:none!important}
+  .banner-three-right .banner-three-counter-item{display:flex;min-width:0;min-height:142px;flex-direction:column;justify-content:center;margin:0!important;padding:18px 14px!important;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+  .banner-three-right .banner-three-counter-item:nth-child(2){margin:0!important}
+  .banner-three-right .banner-three-counter-item:nth-child(3)>div:first-child{justify-content:center}
+  .banner-three-right .banner-three-counter-title{font-size:clamp(2.3rem,5vw,3.8rem)!important;line-height:.95!important}
+  .banner-three-right .banner-three-counter-paragraph{margin:6px 0 0!important;font-size:clamp(.82rem,1.8vw,1rem)!important;line-height:1.3!important;overflow-wrap:anywhere}
+  .banner-three-center{display:flex;order:2;width:100%;flex-direction:column;align-items:center;margin:28px auto 0!important}
+  .banner-three-center-title{display:none}
+}
+
+/* Homepage phone layout: keep the portrait prominent, then show the three
+   key facts together before the primary action. */
+@media (max-width:767px){
+  .banner-three-area{padding:94px 0 58px}
+  .banner-three-wrapper{display:flex;flex-direction:column;align-items:center}
+  .banner-three-title{order:1;margin:0 0 2px!important;font-size:clamp(58px,20vw,105px)!important;line-height:.86}
+  .banner-three-man{position:relative!important;inset:auto!important;left:auto!important;transform:none!important;order:2;width:100%;margin:-10px 0 0;text-align:center}
+  .banner-three-man img{width:min(96vw,430px);height:clamp(320px,86vw,430px);object-position:center bottom}
+  .banner-three-man:after{content:'SHIV YADAV';bottom:5px;font-size:10px;letter-spacing:.18em}
+  .banner-three-wrap{order:3;display:flex!important;width:100%;flex-direction:column;align-items:center}
+  .banner-three-right{display:grid!important;order:1;width:100%;max-width:none!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0!important;padding:0!important;background:transparent!important;box-shadow:none!important}
+  .banner-three-right .banner-three-counter-item{display:flex;min-width:0;min-height:94px;flex-direction:column;justify-content:center;margin:0!important;padding:12px 7px!important;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.12)}
+  .banner-three-right .banner-three-counter-item:nth-child(2){margin:0!important}
+  .banner-three-right .banner-three-counter-item:nth-child(3)>div:first-child{display:none!important}
+  .banner-three-right .banner-three-counter-title{margin-bottom:5px!important;font-size:clamp(1.5rem,7vw,2.15rem)!important;line-height:.95!important}
+  .banner-three-right .banner-three-counter-paragraph{margin:0!important;font-size:10px!important;line-height:1.24!important;overflow-wrap:anywhere}
+  .banner-three-center{display:flex;order:2;width:100%;flex-direction:column;align-items:center;margin:18px auto 0!important}
+  .banner-three-center-title{display:none}
+  .banner-three-center .banner-three-button{width:100%;text-align:center}
+  .banner-three-center .banner-three-button a{min-width:184px}
+  .about-three-wrap-shape{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:10px}
+  .about-three-wrap-shape .banner-three-counter-item{min-width:0;max-width:none;padding:14px 10px}
+  .about-three-wrap-shape .banner-three-counter-title{font-size:clamp(2.15rem,10vw,3.3rem)!important}
+  .about-three-wrap-shape .banner-three-counter-paragraph{font-size:12px!important;line-height:1.35}
+}
