@@ -47,9 +47,9 @@ img { max-width:100%; }
   .shiv-sidebar__close { display:inline-flex; width:38px; height:38px; align-items:center; justify-content:center; border:1px solid var(--shiv-nav-line); border-radius:50%; background:transparent; color:var(--shiv-nav-ink); cursor:pointer; }
   .shiv-sidebar__close:focus-visible { outline:3px solid rgba(217,119,69,.35); outline-offset:2px; }
   .shiv-sidebar__close svg { width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:1.8; }
-  .shiv-sidebar__nav { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:4px; margin-top:26px; }
-  .shiv-sidebar__nav a { display:flex; min-width:0; min-height:70px; flex-direction:column; align-items:center; justify-content:center; gap:6px; padding:7px 2px; border-radius:9px; color:var(--shiv-nav-ink); font-size:9px; font-weight:700; line-height:1.1; text-align:center; text-decoration:none; }
-  .shiv-sidebar__nav a svg { width:18px; height:18px; flex:0 0 18px; fill:none; stroke:currentColor; stroke-width:1.8; }
+  .shiv-sidebar__nav { display:grid; grid-template-columns:1fr; gap:7px; margin-top:26px; }
+  .shiv-sidebar__nav a { display:flex; min-width:0; min-height:54px; align-items:center; gap:10px; padding:0 12px; border-radius:9px; color:var(--shiv-nav-ink); font-size:14px; font-weight:700; line-height:1.2; text-decoration:none; }
+  .shiv-sidebar__nav a svg { width:19px; height:19px; flex:0 0 19px; fill:none; stroke:currentColor; stroke-width:1.8; }
   .shiv-sidebar__nav a:hover,.shiv-sidebar__nav a:focus-visible,.shiv-sidebar__nav a.active { background:rgba(255,253,250,.62); color:var(--shiv-nav-ink); outline:none; }
   .shiv-sidebar__footer { margin-top:auto; padding-top:22px; border-top:1px solid var(--shiv-nav-line); }
   .shiv-sidebar__footer p { margin:0 0 13px; color:var(--shiv-nav-muted); font-size:12px; line-height:1.55; }
@@ -61,7 +61,7 @@ img { max-width:100%; }
 @media (max-width:424px) {
   .shiv-sidebar { width:min(90vw,340px); padding:18px; }
   .shiv-sidebar__nav { margin-top:19px; }
-  .shiv-sidebar__nav a { min-height:64px; font-size:8px; }
+  .shiv-sidebar__nav a { min-height:50px; font-size:13px; }
 }
 @media (prefers-reduced-motion:reduce) {
   *,*::before,*::after { scroll-behavior:auto!important; transition-duration:.01ms!important; animation-duration:.01ms!important; animation-iteration-count:1!important; }
